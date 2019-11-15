@@ -70,10 +70,12 @@ function distributeValentines(){
 
 
 function rowWeaving(){
-	while(frontIsClear()){
-		move();
+	repeat(2){
+		while(frontIsClear()){
+			move();
+		}
+		turnCorner();
 	}
-	turnCorner();
 }
 
 
