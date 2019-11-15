@@ -74,9 +74,10 @@ function rowWeaving(){
 	while(frontIsClear()){
 		move();
 	}
+	repeat(2){	
 		turnCorner();
-		distributeValentines();
 		turnCorner();
+	}
 }
 
 
