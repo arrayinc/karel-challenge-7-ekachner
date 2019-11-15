@@ -63,6 +63,7 @@ function distributeValentines(){
 			putBeeper();
 		}
 	}
+	turnCorner();
 }
 
 
@@ -74,10 +75,7 @@ function rowWeaving(){
 	while(frontIsClear()){
 		move();
 	}
-	repeat(2){	
 		turnCorner();
-		turnCorner();
-	}
 }
 
 
