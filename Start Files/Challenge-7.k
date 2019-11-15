@@ -69,13 +69,15 @@ function distributeValentines(){
 
 
 
+
 function rowWeaving(){
-	repeat(2){
-		while(frontIsClear()){
-			move();
-		}
-		turnCorner();
+	while(frontIsClear()){
+		move();
 	}
+	repeat(3){
+		turnCorner();
+		distributeValentines();
+	}	
 }
 
 
@@ -84,3 +86,4 @@ function rowWeaving(){
 function Solve(){
 	rowWeaving();
 }
+
